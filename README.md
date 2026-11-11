@@ -67,6 +67,10 @@ Run after the scripts above, in this order:
 
 The 17 smartphone screen recordings of the RIS period and two supporting demo videos are not in this repository because of their size; the OCR readings extracted from them are in `processed/ris_videos/`. They are available from the corresponding author on request.
 
+## Funding
+
+This work was supported in part by the Engineering and Physical Sciences Research Council (EPSRC) through the CHEDDAR project (EP/X040518/1) and the UK-India Future Networks Initiative (EP/W016524/1), and by the United Arab Emirates University.
+
 ## Citation and contact
 
 Corresponding author: Jaspreet Kaur (University of Bristol; formerly University of Glasgow). Please cite the article once published; see `CITATION.cff`.
