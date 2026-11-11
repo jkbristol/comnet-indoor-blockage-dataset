@@ -1,0 +1,18 @@
+file,on_screen_date,room,condition_as_labelled,visible_content,duration_s,size_mb
+los_test_without_ris_in_mast_lab.mp4,2024-12-26,Mast lab,"LOS, RIS absent/off (author label)","iperf3 output ending in a stalled session (0 bit/s, connection timed out); subsequent run shown only as MATLAB real-time bitrate plot (approx. 9.5-10.5 Mbit/s, read from plot)",184.9,41.3
+nlos_with_sdr_wihout_ris_in_robotic_lab.mp4,2024-12-26,Robotics lab,"NLOS, no RIS (author label)",srsUE console; RRC re-establishment (EARFCN 3350),123.6,27.6
+matlab_scripts_check_in_los__without_ris_in_robotics_lab.mp4,2025-01-12,Robotics lab,"LOS, no RIS (author label)",MATLAB throughput plot; iperf3 output,120.0,22.8
+bit_rate_in_nlos_wwithout_ris_in_robotics_lab.mp4,2025-01-12,Robotics lab,"NLOS, no RIS (author label)",iperf3 output; MATLAB throughput plot,210.2,41.0
+ris_on_case__with_no_enhancement__in_robotics_lab.mp4,2025-01-26,Robotics lab,"RIS on, no enhancement observed (author label)",iperf3 output; srsUE metrics,140.6,31.3
+ris_off_case_in_robotics_lab.mp4,2025-01-28,Robotics lab,RIS off (author label),RIS Hadamard pattern display; iperf3 output,228.0,50.9
+ue_outside_robotics_la_ithour_ris.mp4,not shown,Outside robotics lab,"UE outside lab, no RIS (author label)",srsUE metrics; RRC re-establishment,115.7,25.8
+snr_without_ris.mp4,2025-02-07,Mast lab,No RIS (author label),MATLAB SNR-over-time plot; iperf3 output,146.2,32.6
+ris_confs_in_mast_lab.mp4,2025-02-11,Mast lab,RIS codebook sweep (author label),MATLAB SNR vs RIS configuration index plot,22.6,5.0
+ris_configuration_before_runiing_experiment_in_mast_lab.mp4,2025-02-19,Mast lab,RIS configuration prior to run (author label),srsUE metrics; iperf3 output; MATLAB code,124.3,27.7
+nlos_ris_enhaced_in_mast_lab.mp4,2025-02-19,Mast lab,"NLOS, RIS on (author label)",Deployment geometry slide; RIS pattern; iperf3; srsUE metrics; MATLAB,215.9,48.2
+ris_configuration_in_mast_lab.mp4,not shown,Mast lab,RIS configurations 133-143 (on-screen code),iperf3 output; MATLAB per-configuration SNR printout,204.7,45.6
+after_ris_conf.mp4,not shown,not shown,After RIS configuration (author label),iperf3 output,25.0,5.5
+ris_off_traffic.mp4,not shown,not shown,RIS off (author label),iperf3 output,81.5,18.1
+partial_nlos_with_ris.mp4,not shown,not shown,"Partial NLOS, RIS on (author label)",Room walk-through; iperf3 output on distant screen,196.9,43.9
+with_ris_in_mast_lab.mp4,not shown,Mast lab,RIS present (author label),RIS panel and room footage only,76.5,17.0
+ris_integartion_on_and_off_in_mast_lab_where_ue_is_in_mini_room_with_haptic_controller.mp4,not shown,Mast lab / mini room,RIS on and off during teleoperation (author label),Teleoperation video feed; RIS panel; no numeric readout,102.3,22.8

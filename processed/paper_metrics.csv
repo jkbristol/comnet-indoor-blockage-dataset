@@ -1,0 +1,4 @@
+scenario,active_s,n_outages,outages_per_10min,outage_median_s,outage_max_s,outages_ge_5s,pct_s_below_1mbps,pct_s_below_5mbps,rlf_events,reestablishment_rejects,ue_metric_seconds,rlf_per_10min_ue_metric_lines
+Location 2,2315,4,1.037,6.500,11,2,1.253,1.382,6,3,2122,1.697
+Location 3,890,26,17.528,3.000,36,9,52.472,99.551,14,7,921,9.121
+"Location 3, door closed",293,23,47.099,3.000,13,5,94.881,100.000,7,0,334,12.575

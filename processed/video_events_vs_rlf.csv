@@ -1,0 +1,7 @@
+scenario,file,event,overlap_s,n_events,near_rlf,frac_near,chance
+Location 2,video_1428_t2.csv,PLI Count,2037,6,0,0.0,0.031909671084928815
+Location 2,video_1428_t2.csv,Pause Count,2037,2,0,0.0,0.031909671084928815
+Location 3,video_1522_loc3.csv,PLI Count,860,22,18,0.8181818181818182,0.17790697674418604
+Location 3,video_1522_loc3.csv,Pause Count,860,8,5,0.625,0.17790697674418604
+"Location 3, door closed",video_1557_doorclosed.csv,PLI Count,277,9,8,0.8888888888888888,0.24548736462093862
+"Location 3, door closed",video_1557_doorclosed.csv,Pause Count,277,1,0,0.0,0.24548736462093862

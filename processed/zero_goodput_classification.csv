@@ -1,0 +1,262 @@
+scenario,iperf_second,run,goodput_mbps,state,rsrp_dbm,dl_snr_db,dl_mcs,ul_mcs,ul_brate_mbps,ul_bler_pct,rlf,reest_reject,reest_ok,rrc_release,sr_fail,service_req_fail,t301,cell_unsuitable,active,ue_class,near_rlf
+Location 2,552,2,0.0,connected,-66.0,26.0,1.0,0.0,0.00028,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 2,553,2,0.0,connected,-66.0,23.0,17.0,16.0,0.193,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,554,2,0.0,connected,-66.0,23.0,21.0,15.0,0.187,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,555,2,0.0,connected,-66.0,24.0,21.0,15.0,0.191,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,2152,2,0.0,connected,-65.0,24.0,0.0,15.0,0.013,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 2,2153,2,0.0,connected,-65.0,23.0,0.0,15.0,0.013,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 2,2154,2,0.0,connected,-66.0,24.0,0.0,15.0,0.013,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 2,2155,2,0.0,connected,-66.0,23.0,0.0,15.0,0.0085,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 2,2156,2,0.0,connected,-66.0,22.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 2,2157,2,0.0,connected,-66.0,22.0,1.0,0.0,0.00056,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 2,2158,2,0.0,connected,-66.0,23.0,17.0,15.0,0.307,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,2159,2,0.0,connected,-66.0,22.0,19.0,14.0,0.228,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,2160,2,0.0,connected,-66.0,24.0,19.0,15.0,0.149,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,2161,2,0.0,connected,-66.0,23.0,19.0,15.0,0.161,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,2162,2,0.0,connected,-66.0,23.0,16.0,19.0,3.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 2,2284,2,0.0,connected,-66.0,22.0,1.0,0.0,0.000168,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 2,2285,2,0.0,connected,-66.0,22.0,14.0,16.0,0.225,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,2286,2,0.0,connected,-66.0,21.0,18.0,15.0,0.216,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,2287,2,0.0,connected,-66.0,23.0,17.0,15.0,0.219,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 2,2376,2,0.0,connected,-66.0,22.0,0.0,14.0,0.012,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 2,2377,2,0.0,connected,-67.0,23.0,0.0,14.0,0.012,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 2,2378,2,0.0,connected,-66.0,24.0,0.0,14.0,0.012,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 2,2379,2,0.0,connected,-66.0,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 2,2380,2,0.0,connected,-65.0,25.0,1.0,0.0,0.000448,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 2,2381,2,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 2,2382,2,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 2,2383,2,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 2,2384,2,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,29,1,0.0,connected,-82.0,5.0,0.0,14.0,0.286,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,78,1,0.0,connected,-85.0,4.0,0.0,9.0,0.0085,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,79,1,0.0,connected,-85.0,4.0,0.0,9.0,0.013,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,80,1,0.0,connected,-83.0,5.0,0.0,9.0,0.013,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,82,1,0.0,connected,-82.0,6.0,1.0,0.0,5.6e-05,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,83,1,0.0,connected,-80.0,6.0,1.0,16.0,0.203,10.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,84,1,0.0,connected,-80.0,7.0,2.0,14.0,0.248,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,85,1,0.0,connected,-83.0,5.0,1.0,12.0,0.137,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,86,1,0.0,connected,-83.0,5.0,2.0,11.0,0.196,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,87,1,0.0,connected,-83.0,6.0,2.0,14.0,0.16,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,106,1,0.0,connected,-85.0,5.0,1.0,0.0,5.6e-05,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,107,1,0.0,connected,-84.0,5.0,3.0,14.0,0.16,7.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,108,1,0.0,connected,-85.0,4.0,10.0,13.0,0.123,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,111,1,0.0,connected,-83.0,5.0,0.0,0.0,0.0038,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,112,1,0.0,connected,-82.0,7.0,0.0,0.0,0.0038,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,113,1,0.0,connected,-82.0,7.0,0.0,0.0,0.0038,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,114,1,0.0,connected,-82.0,7.0,0.0,0.0,0.0013,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,115,1,0.0,connected,-81.0,6.0,1.0,0.0,0.0013,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,116,1,0.0,connected,-81.0,7.0,2.0,16.0,0.235,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,117,1,0.0,connected,-82.0,6.0,1.0,17.0,0.3,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,118,1,0.0,connected,-81.0,7.0,3.0,15.0,0.099,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,119,1,0.0,connected,-83.0,7.0,0.0,22.0,0.012,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,120,1,0.0,connected,-81.0,8.0,0.0,22.0,0.012,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,121,1,0.0,connected,-82.0,7.0,0.0,22.0,0.012,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,122,1,0.0,connected,-83.0,6.0,0.0,22.0,0.0040999999999999,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,123,1,0.0,connected,-82.0,6.0,1.0,0.0,0.000168,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,124,1,0.0,connected,-84.0,7.0,2.0,16.0,0.185,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,125,1,0.0,connected,-83.0,7.0,3.0,16.0,0.32,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,126,1,0.0,connected,-83.0,6.0,0.0,16.0,0.308,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,127,1,0.0,connected,-82.0,6.0,1.0,15.0,0.249,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,128,1,0.0,connected,-83.0,7.0,1.0,15.0,0.251,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,131,1,0.0,connected,-85.0,4.0,0.0,0.0,0.0038,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,132,1,0.0,connected,-85.0,5.0,0.0,0.0,0.0025,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,133,1,0.0,connected,-82.0,6.0,0.0,0.0,0.0038,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,134,1,0.0,connected,-82.0,6.0,0.0,0.0,0.0025,44.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,135,1,0.0,connected,-83.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,136,1,0.0,connected,-82.0,6.0,1.0,16.0,0.154,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,137,1,0.0,connected,-84.0,5.0,1.0,17.0,0.207,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,138,1,0.0,connected,-83.0,6.0,1.0,15.0,0.209,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,139,1,0.0,connected,-83.0,7.0,2.0,14.0,0.197,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,140,1,0.0,connected,-82.0,6.0,0.0,14.0,0.181,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,141,1,0.0,connected,-81.0,6.0,1.0,14.0,0.25,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,162,1,0.0,connected,-82.0,4.0,0.0,16.0,0.135,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,163,1,0.0,connected,-83.0,4.0,2.0,17.0,0.109,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,174,1,0.0,connected,-82.0,6.0,17.0,16.0,0.22,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,182,1,0.0,connected,-82.0,6.0,0.0,0.0,0.0038,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,183,1,0.0,connected,-82.0,7.0,0.0,0.0,0.0025,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,184,1,0.0,connected,-81.0,6.0,0.0,0.0,0.0038,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,185,1,0.0,connected,-82.0,4.0,0.0,0.0,0.0038,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,186,1,0.0,connected,-82.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,187,1,0.0,disconnected,,,,,,,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,True,UE not RRC-connected (no metrics line),True
+Location 3,188,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,189,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,190,1,0.0,connected,-83.0,4.0,1.0,17.0,0.0081,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,191,1,0.0,connected,-84.0,4.0,0.0,22.0,0.148,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,194,1,0.0,connected,-81.0,5.0,0.0,15.0,0.171,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,214,1,0.0,connected,-83.0,4.0,14.0,18.0,0.138,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,257,1,0.0,connected,-83.0,4.0,5.0,14.0,0.282,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,271,1,0.0,connected,-87.0,4.0,1.0,14.0,0.178,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,273,1,0.0,connected,-86.0,4.0,5.0,14.0,0.162,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,288,1,0.0,connected,-84.0,2.0,0.0,4.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,289,1,0.0,disconnected,,,,,,,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,True,UE not RRC-connected (no metrics line),True
+Location 3,290,1,0.0,disconnected,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,UE not RRC-connected (no metrics line),True
+Location 3,291,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,341,1,0.0,connected,-84.0,4.0,0.0,13.0,0.141,17.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,343,1,0.0,connected,-84.0,3.0,4.0,11.0,0.271,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,344,1,0.0,disconnected,,,,,,,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,True,UE not RRC-connected (no metrics line),True
+Location 3,345,1,0.0,disconnected,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,UE not RRC-connected (no metrics line),True
+Location 3,346,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,347,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,348,1,0.0,connected,-81.0,6.0,1.0,18.0,0.996,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,350,1,0.0,connected,-84.0,6.0,2.0,17.0,0.273,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,351,1,0.0,connected,-85.0,5.0,4.0,14.0,0.132,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,352,1,0.0,connected,-82.0,5.0,2.0,15.0,0.19,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,353,1,0.0,connected,-81.0,7.0,2.0,15.0,0.171,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,354,1,0.0,connected,-81.0,7.0,0.0,15.0,0.145,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,364,1,0.0,connected,-84.0,3.0,0.0,9.0,0.0043,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,365,1,0.0,connected,-85.0,3.0,0.0,9.0,0.0085,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,366,1,0.0,connected,-83.0,5.0,0.0,9.0,0.0085,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,368,1,0.0,connected,-81.0,7.0,1.0,0.0,5.6e-05,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,369,1,0.0,connected,-79.0,7.0,0.0,15.0,0.283,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,512,1,0.0,connected,-86.0,4.0,5.0,9.0,0.0085,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,513,1,0.0,connected,-84.0,6.0,0.0,9.0,0.013,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,514,1,0.0,connected,-84.0,6.0,14.0,9.0,0.013,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,515,1,0.0,connected,-84.0,6.0,0.0,9.0,0.0085,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,516,1,0.0,connected,-83.0,7.0,0.0,9.0,0.0043,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,517,1,0.0,connected,-83.0,7.0,4.0,0.0,0.000168,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,518,1,0.0,connected,-83.0,7.0,1.0,17.0,0.198,12.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,519,1,0.0,connected,-81.0,9.0,4.0,15.0,0.23,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,547,1,0.0,connected,-86.0,4.0,0.0,7.0,0.0087,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,548,1,0.0,connected,-86.0,4.0,0.0,7.0,0.0088,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,550,1,0.0,connected,-85.0,4.0,0.0,7.0,0.0044,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,551,1,0.0,connected,-86.0,3.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,552,1,0.0,disconnected,,,,,,,1.0,0.0,0.0,0.0,0.0,4.0,1.0,0.0,True,UE not RRC-connected (no metrics line),True
+Location 3,553,1,0.0,connected,-84.0,5.0,1.0,14.0,0.0044,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,554,1,0.0,connected,-83.0,7.0,4.0,16.0,0.728,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,555,1,0.0,connected,-84.0,5.0,0.0,15.0,0.148,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+Location 3,556,1,0.0,connected,-87.0,4.0,0.0,14.0,0.083,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,557,1,0.0,connected,-87.0,3.0,4.0,5.0,0.03,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,558,1,0.0,connected,-86.0,4.0,0.0,10.0,0.0085,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,559,1,0.0,connected,-86.0,4.0,0.0,10.0,0.013,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,560,1,0.0,connected,-86.0,5.0,0.0,10.0,0.013,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,561,1,0.0,connected,-87.0,4.0,0.0,10.0,0.0,75.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,562,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,563,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,564,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,565,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,566,1,0.0,disconnected,,,,,,,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,True,UE not RRC-connected (no metrics line),True
+Location 3,567,1,0.0,disconnected,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,UE not RRC-connected (no metrics line),True
+Location 3,568,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,569,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,570,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,571,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,572,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,573,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,574,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,575,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,576,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,577,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,578,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,579,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+Location 3,580,1,0.0,connected,-84.0,7.0,1.0,13.0,0.093,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,581,1,0.0,connected,-83.0,8.0,5.0,15.0,0.438,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,582,1,0.0,connected,-82.0,9.0,4.0,15.0,0.249,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,583,1,0.0,connected,-81.0,8.0,3.0,14.0,0.181,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,584,1,0.0,connected,-82.0,8.0,0.0,14.0,0.231,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,585,1,0.0,connected,-81.0,8.0,1.0,14.0,0.207,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,623,1,0.0,connected,-86.0,4.0,0.0,6.0,0.037,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,624,1,0.0,connected,-84.0,6.0,0.0,7.0,0.013,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,625,1,0.0,connected,-82.0,5.0,0.0,7.0,0.013,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,626,1,0.0,connected,-82.0,6.0,0.0,7.0,0.013,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,628,1,0.0,connected,-81.0,7.0,1.0,0.0,5.6e-05,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,629,1,0.0,disconnected,,,,,,,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,True,UE not RRC-connected (no metrics line),True
+Location 3,630,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,631,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+Location 3,632,1,0.0,connected,-82.0,6.0,2.0,14.0,0.0047,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+Location 3,633,1,0.0,connected,-83.0,6.0,1.0,17.0,1.8,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,634,1,0.0,connected,-83.0,5.0,0.0,15.0,1.2,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,635,1,0.0,connected,-83.0,5.0,1.0,15.0,0.448,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,636,1,0.0,connected,-81.0,7.0,0.0,16.0,0.26,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,637,1,0.0,connected,-84.0,5.0,2.0,14.0,0.146,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,638,1,0.0,connected,-85.0,4.0,13.0,14.0,0.119,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,639,1,0.0,connected,-85.0,5.0,2.0,14.0,0.157,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,640,1,0.0,connected,-83.0,6.0,1.0,14.0,0.154,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,641,1,0.0,connected,-83.0,5.0,8.0,13.0,0.094,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+Location 3,642,1,0.0,connected,-84.0,6.0,0.0,15.0,0.127,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,643,1,0.0,connected,-83.0,6.0,2.0,16.0,0.182,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,644,1,0.0,connected,-82.0,6.0,0.0,17.0,0.207,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,645,1,0.0,connected,-82.0,7.0,0.0,15.0,0.156,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,809,1,0.0,connected,-82.0,6.0,0.0,11.0,0.178,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,810,1,0.0,connected,-82.0,6.0,0.0,15.0,0.179,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+Location 3,811,1,0.0,connected,-82.0,7.0,2.0,15.0,0.181,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",38,1,0.0,connected,-84.0,4.0,0.0,10.0,0.214,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",39,1,0.0,connected,-83.0,6.0,0.0,4.0,0.206,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",46,1,0.0,disconnected,,,,,,,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",47,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",48,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",49,1,0.0,connected,-84.0,6.0,1.0,2.0,0.0053,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+"Location 3, door closed",51,1,0.0,connected,-82.0,4.0,3.0,4.0,0.217,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",52,1,0.0,connected,-83.0,6.0,1.0,2.0,0.145,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",53,1,0.0,connected,-83.0,6.0,1.0,3.0,0.174,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",55,1,0.0,connected,-84.0,6.0,0.0,1.0,0.272,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",56,1,0.0,connected,-82.0,5.0,1.0,5.0,0.115,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",57,1,0.0,connected,-84.0,4.0,10.0,3.0,0.156,17.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",58,1,0.0,connected,-85.0,4.0,11.0,9.0,0.123,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",59,1,0.0,connected,-85.0,5.0,0.0,2.0,0.14,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",61,1,0.0,connected,-84.0,4.0,1.0,4.0,0.111,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",62,1,0.0,connected,-83.0,4.0,6.0,6.0,0.155,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",63,1,0.0,connected,-84.0,6.0,2.0,1.0,0.13,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",64,1,0.0,connected,-85.0,5.0,2.0,10.0,0.118,17.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",65,1,0.0,connected,-85.0,4.0,1.0,3.0,0.109,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+"Location 3, door closed",66,1,0.0,connected,-84.0,5.0,4.0,4.0,0.118,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+"Location 3, door closed",67,1,0.0,connected,-85.0,5.0,0.0,4.0,0.126,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+"Location 3, door closed",68,1,0.0,connected,-87.0,3.0,5.0,5.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+"Location 3, door closed",69,1,0.0,disconnected,,,,,,,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",70,1,0.0,disconnected,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",71,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",72,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+"Location 3, door closed",73,1,0.0,connected,-83.0,6.0,2.0,3.0,0.428,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",81,1,0.0,connected,-81.0,8.0,1.0,8.0,0.334,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",82,1,0.0,connected,-82.0,7.0,0.0,4.0,0.152,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",114,1,0.0,connected,-82.0,4.0,6.0,6.0,0.23,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",115,1,0.0,connected,-82.0,4.0,3.0,4.0,0.128,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",116,1,0.0,connected,-82.0,4.0,0.0,2.0,0.164,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",117,1,0.0,connected,-83.0,4.0,0.0,3.0,0.106,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",118,1,0.0,connected,-83.0,4.0,0.0,8.0,0.174,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",122,1,0.0,connected,-85.0,5.0,6.0,4.0,0.257,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+"Location 3, door closed",125,1,0.0,disconnected,,,,,,,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",126,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",127,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",128,1,0.0,connected,-85.0,3.0,1.0,4.0,0.0023,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+"Location 3, door closed",131,1,0.0,connected,-82.0,6.0,1.0,3.0,0.133,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",132,1,0.0,connected,-82.0,7.0,3.0,6.0,0.141,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",133,1,0.0,connected,-83.0,7.0,2.0,7.0,0.153,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",134,1,0.0,connected,-83.0,5.0,4.0,2.0,0.273,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",167,1,0.0,disconnected,,,,,,,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",168,1,0.0,disconnected,,,,,,,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",169,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",170,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",171,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+"Location 3, door closed",172,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+"Location 3, door closed",173,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),False
+"Location 3, door closed",180,1,0.0,connected,-84.0,3.0,1.0,9.0,0.111,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",181,1,0.0,connected,-83.0,4.0,0.0,12.0,0.145,17.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",182,1,0.0,connected,-82.0,6.0,0.0,9.0,0.158,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",183,1,0.0,connected,-83.0,6.0,0.0,11.0,0.164,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",205,1,0.0,connected,-82.0,7.0,1.0,7.0,0.138,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",213,1,0.0,connected,-84.0,3.0,8.0,6.0,0.145,44.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+"Location 3, door closed",214,1,0.0,connected,-85.0,4.0,1.0,4.0,0.111,31.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",True
+"Location 3, door closed",216,1,0.0,disconnected,,,,,,,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",217,1,0.0,connected,-84.0,4.0,1.0,2.0,0.0024,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",True
+"Location 3, door closed",218,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",219,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",220,1,0.0,not logged,,,,,,,,,,,,,,,True,UE not RRC-connected (no metrics line),True
+"Location 3, door closed",230,1,0.0,connected,-82.0,7.0,1.0,4.0,0.268,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",237,1,0.0,connected,-84.0,5.0,0.0,4.0,0.354,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",238,1,0.0,connected,-83.0,6.0,1.0,2.0,0.103,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",239,1,0.0,connected,-83.0,8.0,1.0,7.0,0.139,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",240,1,0.0,connected,-84.0,5.0,1.0,4.0,0.119,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",255,1,0.0,connected,-82.0,8.0,1.0,3.0,0.21,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",266,1,0.0,connected,-82.0,6.0,1.0,1.0,0.137,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",267,1,0.0,connected,-81.0,7.0,1.0,9.0,0.167,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",269,1,0.0,connected,-82.0,7.0,0.0,1.0,0.213,29.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",273,1,0.0,connected,-81.0,8.0,1.0,2.0,0.121,64.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",274,1,0.0,connected,-82.0,7.0,0.0,3.0,0.092,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+"Location 3, door closed",275,1,0.0,connected,-81.0,8.0,1.0,1.0,0.147,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",281,1,0.0,connected,-83.0,5.0,4.0,2.0,0.334,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",282,1,0.0,connected,-83.0,5.0,2.0,9.0,0.144,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",283,1,0.0,connected,-83.0,7.0,0.0,3.0,0.176,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",284,1,0.0,connected,-82.0,7.0,0.0,5.0,0.132,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",286,1,0.0,connected,-83.0,5.0,3.0,7.0,0.113,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False
+"Location 3, door closed",287,1,0.0,connected,-84.0,6.0,0.0,11.0,0.047,57.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC < 0.1 Mbit/s",False
+"Location 3, door closed",288,1,0.0,connected,-84.0,5.0,1.0,2.0,0.141,55.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,True,"connected, UL MAC >= 0.1 Mbit/s",False

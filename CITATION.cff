@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite the associated article."
+title: "Cross-layer impact of indoor blockage on a software-defined LTE link for robotic teleoperation: data and code"
+type: dataset
+authors:
+  - {family-names: Kaur, given-names: Jaspreet}
+  - {family-names: Hassouna, given-names: Saber}
+  - {family-names: Kizilkaya, given-names: Burak}
+  - {family-names: Kazim, given-names: "Jalil ur Rehman"}
+  - {family-names: Ansari, given-names: Shuja}
+  - {family-names: Kherani, given-names: "Arzad Alam"}
+  - {family-names: Lall, given-names: Brijesh}
+  - {family-names: Abbasi, given-names: "Qammer H."}
+  - {family-names: Imran, given-names: Muhammad}
+repository-code: "https://github.com/jkbristol/comnet-indoor-blockage-dataset"
+license: CC-BY-4.0

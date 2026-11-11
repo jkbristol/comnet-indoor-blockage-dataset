@@ -1,0 +1,949 @@
+jalil@Avante-391635:~$ sudo srsenb --enb.name=enb1 --enb.enb_id=0x19B --rf.device_name=uhd --rf.device_args="type=x300,clock=external,sampling_rate=11.52e6,send_frame_size=8000,recv_frame_size=8000,num_send_frames=64,num_recv_frames=64,None" --ric.agent.remote_ipv4_addr=${E2TERM_IP} --log.all_level=warn --ric.agent.log_level=debug --log.filename=stdout --ric.agent.local_ipv4_addr=${E2NODE_IP} --ric.agent.local_port=${E2NODE_PORT}
+---  Software Radio Systems LTE eNodeB  ---
+
+Couldn't open , trying /root/.config/srsran/enb.conf
+Reading configuration file /root/.config/srsran/enb.conf...
+Couldn't open sib.conf, trying /root/.config/srsran/sib.conf
+Couldn't open rr.conf, trying /root/.config/srsran/rr.conf
+Couldn't open rb.conf, trying /root/.config/srsran/rb.conf
+2025-03-11T15:54:22.672340 [ENB    ] [I] Using binary srsenb with arguments: --enb.name=enb1 --enb.enb_id=0x19B --rf.device_name=uhd --rf.device_args=type=x300,clock=external,sampling_rate=11.52e6,send_frame_size=8000,recv_frame_size=8000,num_send_frames=64,num_recv_frames=64,None --ric.agent.remote_ipv4_addr=10.103.229.210 --log.all_level=warn --ric.agent.log_level=debug --log.filename=stdout --ric.agent.local_ipv4_addr=192.168.40.1 --ric.agent.local_port=5006 
+
+Built in RelWithDebInfo mode using commit 384d343 on branch HEAD.
+
+2025-03-11T15:54:22.701680 [ENB    ] [I] Built in RelWithDebInfo mode using commit 384d343 on branch HEAD.
+2025-03-11T15:54:22.756331 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2025-03-11T15:54:22.756333 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2025-03-11T15:54:22.756344 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:0
+2025-03-11T15:54:22.756429 [COMN   ] [D] [    0] RxSockets: socket fd=5 has been registered.
+2025-03-11T15:54:22.756471 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:2152
+2025-03-11T15:54:22.756473 [COMN   ] [D] [    0] RxSockets: socket fd=6 has been registered.
+Opening 1 channels in RF device=uhd with args=type=x300,clock=external,sampling_rate=11.52e6,send_frame_size=8000,recv_frame_size=8000,num_send_frames=64,num_recv_frames=64,None
+Available RF device list: UHD  soapy  bladeRF  zmq 
+[INFO] [UHD] linux; GNU C++ version 9.4.0; Boost_107100; UHD_4.7.0.0-0ubuntu1~focal1
+[INFO] [LOGGING] Fastpath logging disabled at runtime.
+Opening USRP channels=1, args: type=x300,send_frame_size=8000,recv_frame_size=8000,num_send_frames=64,num_recv_frames=64,None=,master_clock_rate=184.32e6
+[INFO] [UHD RF] RF UHD Generic instance constructed
+[INFO] [X300] X300 initialization sequence...
+[INFO] [X300] Maximum frame size: 8000 bytes.
+[INFO] [X300] Radio 1x clock: 184.32 MHz
+[WARNING] [RFNOC::GRAPH] One or more blocks timed out during flush!
+Setting frequency: DL=3579.9 Mhz, UL=3479.9 MHz for cc_idx=0 nof_prb=50
+2025-03-11T15:54:28.134755 [RIC    ] [D] [    0] log_level = debug
+
+2025-03-11T15:54:28.134757 [E2SM   ] [I] [    0] kpm: building function list
+
+2025-03-11T15:54:28.136365 [RIC    ] [I] [    0] added model ORAN-E2SM-KPM
+
+2025-03-11T15:54:28.136377 [RIC    ] [I] [    0] added model ORAN-E2SM-gNB-NRT
+
+2025-03-11T15:54:28.136378 [RIC    ] [D] [    0] model ORAN-E2SM-KPM function ORAN-E2SM-KPM (function_id 0) enabled and registered
+
+2025-03-11T15:54:28.136379 [RIC    ] [D] [    0] model ORAN-E2SM-gNB-NRT function ORAN-E2SM-gNB-NRT (function_id 1) enabled and registered
+
+2025-03-11T15:54:28.136379 [RIC    ] [D] [    0] RIC state -> INITIALIZED
+
+
+==== eNodeB started ===
+Type <t> to view trace
+2025-03-11T15:54:28.139617 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2025-03-11T15:54:28.139618 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2025-03-11T15:54:28.139628 [COMN   ] [D] [    0] Successfully bound to address 192.168.40.1:5006
+<E2AP-PDU>
+    <initiatingMessage>
+        <procedureCode>1</procedureCode>
+        <criticality><reject/></criticality>
+        <value>
+            <E2setupRequest>
+        2025-03-11T15:54:28.141249 [COMN   ] [D] [    0] RxSockets: socket fd=25 has been registered.
+        <2025-03-11T15:54:28.141250 [RIC    ] [D] [    0] RIC state -> CONNECTED
+
+protocolIEs>2025-03-11T15:54:28.141250 [RIC    ] [I] [    0] connected to RIC on 10.103.229.210
+
+                    <E2setupRequestIEs>
+                        <id>3</id>
+                        <criticality><reject/></criticality>
+                        <value>
+                            <GlobalE2node-ID>
+                                <eNB>
+                                    <global-eNB-ID>
+                                        <pLMN-Identity>00 F1 10</pLMN-Identity>
+                                        <eNB-ID>
+                                            <macro-eNB-ID>
+                                                00000000000110011011
+                                            </macro-eNB-ID>
+                                        </eNB-ID>
+                                    </global-eNB-ID>
+                                </eNB>
+                            </GlobalE2node-ID>
+                        </value>
+                    </E2setupRequestIEs>
+                    <E2setupRequestIEs>
+                        <id>10</id>
+                        <criticality><reject/></criticality>
+                        <value>
+                            <RANfunctions-List>
+                                <ProtocolIE-SingleContainer>
+                                    <id>8</id>
+                                    <criticality><reject/></criticality>
+                                    <value>
+                                        <RANfunction-Item>
+                                            <ranFunctionID>0</ranFunctionID>
+                                            <ranFunctionDefinition>
+                                                00 C0 4F 52 41 4E 2D 45 32 53 4D 2D 4B 50 4D 00 
+                                                00 12 31 2E 33 2E 36 2E 31 2E 34 2E 31 2E 31 2E 
+                                                31 2E 32 2E 32 05 00 4B 50 4D 20 6D 6F 6E 69 74 
+                                                6F 72 60 00 01 01 03 80 54 72 69 67 67 65 72 31 
+                                                01 01 00 01 06 1E 80 4F 2D 43 55 2D 55 50 20 4D 
+                                                65 61 73 75 72 65 6D 65 6E 74 20 43 6F 6E 74 61 
+                                                69 6E 65 72 20 66 6F 72 20 74 68 65 20 45 50 43 
+                                                20 63 6F 6E 6E 65 63 74 65 64 20 64 65 70 6C 6F 
+                                                79 6D 65 6E 74 01 01 01 01
+                                            </ranFunctionDefinition>
+                                            <ranFunctionRevision>0</ranFunctionRevision>
+                                        </RANfunction-Item>
+                                    </value>
+                                </ProtocolIE-SingleContainer>
+                                <ProtocolIE-SingleContainer>
+                                    <id>8</id>
+                                    <criticality><reject/></criticality>
+                                    <value>
+                                        <RANfunction-Item>
+                                            <ranFunctionID>1</ranFunctionID>
+                                            <ranFunctionDefinition>
+                                                60 08 00 4F 52 41 4E 2D 45 32 53 4D 2D 67 4E 42 
+                                                2D 4E 52 54 00 00 20 31 2E 33 2E 36 2E 31 2E 34 
+                                                2E 31 2E 32 38 34 35 38 2E 39 39 2E 30 2E 32 31 
+                                                2E 33 2E 33 2E 31 2E 33 03 00 67 4E 42 2D 4E 52 
+                                                54 00 01 01 03 80 54 72 69 67 67 65 72 31 01 01 
+                                                00 01 06 03 00 52 65 70 6F 72 74 31 01 01 00 00 
+                                                01 02 80 50 61 72 61 6D 31 10 01 01 01 01
+                                            </ranFunctionDefinition>
+                                            <ranFunctionRevision>0</ranFunctionRevision>
+                                        </RANfunction-Item>
+                                    </value>
+                                </ProtocolIE-SingleContainer>
+                            </RANfunctions-List>
+                        </value>
+                    </E2setupRequestIEs>
+                </protocolIEs>
+            </E2setupRequest>
+        </value>
+    </initiatingMessage>
+</E2AP-PDU>
+2025-03-11T15:54:28.142087 [RIC    ] [I] [    0] sent E2setupRequest to RIC
+
+2025-03-11T15:54:28.142087 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:54:33.142147 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:54:38.142210 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:54:43.142282 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:54:48.142345 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:54:53.142407 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:54:58.142471 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:55:03.142534 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:55:08.142601 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:55:13.142667 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:55:18.142730 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+2025-03-11T15:55:23.142787 [RIC    ] [D] [    0] waiting for E2setupResponse...
+
+RACH:  tti=8021, cc=0, preamble=14, offset=1, temp_crnti=0x46
+RACH:  tti=8041, cc=0, preamble=46, offset=1, temp_crnti=0x47
+RACH:  tti=8061, cc=0, preamble=46, offset=1, temp_crnti=0x48
+Disconnecting rnti=0x46.
+Disconnecting rnti=0x47.
+<E2AP-PDU>
+    <successfulOutcome>
+        <procedureCode>1</procedureCode>
+        <criticality><reject/></criticality>
+        <value>
+            <E2setupResponse>
+                <protocolIEs>
+                    <E2setupResponseIEs>
+                        <id>4</id>
+                        <criticality><reject/></criticality>
+                        <value>
+                            <GlobalRIC-ID>
+                                <pLMN-Identity>13 10 14</pLMN-Identity>
+                                <ric-ID>
+                                    10101010110011001110
+                                </ric-ID>
+                            </GlobalRIC-ID>
+                        </value>
+                    </E2setupResponseIEs>
+                    <E2setupResponseIEs>
+                        <id>9</id>
+                        <criticality><reject/></criticality>
+                        <value>
+                            <RANfunctionsID-List>
+                                <ProtocolIE-SingleContainer>
+                                    <id>6</id>
+                                    <criticality><ignore/></criticality>
+                                    <value>
+                                        <RANfunctionID-Item>
+                                            <ranFunctionID>0</ranFunctionID>
+                                            <ranFunctionRevision>0</ranFunctionRevision>
+                                        </RANfunctionID-Item>
+                                    </value>
+                                </ProtocolIE-SingleContainer>
+                                <ProtocolIE-SingleContainer>
+                                    <id>6</id>
+                                    <criticality><ignore/></criticality>
+                                    <value>
+                                        <RANfunctionID-Item>
+                                            <ranFunctionID>1</ranFunctionID>
+                                            <ranFunctionRevision>0</ranFunctionRevision>
+                                        </RANfunctionID-Item>
+                                    </value>
+                                </ProtocolIE-SingleContainer>
+                            </RANfunctionsID-List>
+                        </value>
+                    </E2setupResponseIEs>
+                </protocolIEs>
+            </E2setupResponse>
+        </value>
+    </successfulOutcome>
+</E2AP-PDU>
+2025-03-11T15:55:28.143389 [E2AP   ] [I] [    0] decoded successful outcome E2SetupResponse (1)
+
+2025-03-11T15:55:28.143389 [E2AP   ] [I] [    0] Received E2SetupResponse
+
+2025-03-11T15:55:28.143390 [E2AP   ] [I] [    0] E2SetupResponse from RIC (mcc=318,mnc=109,id=699598)
+
+2025-03-11T15:55:28.143391 [RIC    ] [D] [    0] RIC state -> ESTABLISHED
+
+Disconnecting rnti=0x48.
+RACH:  tti=2271, cc=0, preamble=45, offset=1, temp_crnti=0x49
+User 0x49 connected
+t
+Enter t to stop trace.
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   49    3   0    0    43k   70   34  32% |   4.9   12.2   31    1   1.1M  648  216  25%  2.35k
+lte   49    3   0    0    26k   43   23  34% |   4.5    9.7   31    0   855k  669  144  17%    0.0
+lte   49    3   0    0    24k   42   10  19% |   6.4   11.4   31    1   1.1M  582  103  15%  5.70k
+lte   49    3   0    0    34k   55   29  34% |   5.5   11.7   31    0   1.1M  733  143  16%  5.50k
+lte   49    3   0    0    17k   28   22  44% |   5.4    8.2   31    1   686k  398  178  30%  4.69k
+lte   49    3   0    0    14k   19   19  50% |   6.1    8.7   31    2   593k  307  178  36%    0.0
+lte   49    3   0    0    25k   40   13  24% |   7.5   10.0   31    2   999k  522  139  21%    501
+lte   49    2   0    0    16k   25    9  26% |   4.8   10.3   31    0   566k  461  212  31%  2.21k
+lte   49    2   0    0   6.1k   11    7  38% |   3.9    7.2   31    1   267k  199  260  56%    0.0
+lte   49    2   0    0   8.6k   14    4  22% |   5.0    9.3   31    1   334k  240  156  39%  2.46k
+lte   49    2   0    0   7.6k   14   18  56% |   4.1    7.4   31    0   353k  273  295  51%  1.17k
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   49    2   0    0    12k   20   20  50% |   4.0    7.5   31    0   530k  408  295  41%  6.30k
+lte   49    3   0    0    25k   41   23  35% |   5.1   12.2   31    0   911k  737  123  14%  4.91k
+lte   49    3   0    0    27k   47   22  31% |   5.2   10.2   31    0   1.1M  870   44   4%  8.59k
+lte   49    3   0    0    19k   34   18  34% |   4.2   12.1   31    0   798k  639  239  27%  4.47k
+lte   49    3   0    0    28k   43   20  31% |   4.9   13.7   31    0   916k  717  113  13%  5.50k
+lte   49    3   0    0    33k   34   64  65% |   3.3   10.5   31    0   697k  562  340  37%  4.42k
+lte   49    3   0    0   228k  173  160  48% |   4.0   10.2   31    1   741k  472  208  30%    0.0
+lte   49    3   0    0   151k  118   64  35% |   3.6    8.2   31    1   439k  285  198  40%  1.95k
+lte   49    3   0    0    20k   34   27  44% |   3.9   11.1   31    0   738k  604  152  20%  4.75k
+lte   49    3   0    1    13k   21   38  64% |   3.2    7.5   31    0   593k  487  290  37%  5.18k
+lte   49    3   0    0    42k   62   20  24% |   6.0   11.3   31    1   1.2M  707   90  11%  8.10k
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   49    4   0    0    38k   56   20  26% |   6.7    9.6   31    2   1.2M  621  131  17%  4.75k
+lte   49    4   0    1    29k   50   14  21% |   7.1   12.2   31    0   1.1M  800   71   8%  9.62k
+lte   49    4   0    1    31k   52   14  21% |   6.6   15.6   31    1   1.1M  685  181  20%  7.40k
+lte   49    4   0    0   214k  186   45  19% |   6.8   11.3   31    0   1.1M  867   31   3%  9.03k
+lte   49    3   0    0   434k  322  312  49% |   4.4    8.8   31    0   839k  632  232  26%  2.71k
+lte   49    2   0    0   402k  303  309  50% |   2.6    9.3   31    0   265k  232  242  51%  4.36k
+lte   49    2   0    0   277k  231  183  44% |   3.9    6.8   31    1   287k  226  178  44%    0.0
+lte   49    2   0    0   257k  201  349  63% |   2.4    7.3   31    0   403k  333  263  44%    0.0
+lte   49    3   0    1   315k  239  277  53% |   3.3   11.7   31    2   178k  119  353  74%    0.0
+lte   49    2   0    0   252k  213  113  34% |   2.8   10.3   31    0   173k  147  158  51%    0.0
+lte   49    1   0    0   187k  151  385  71% |   2.1    3.9   31    0   223k  190  332  63%    446
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   49    3   0    0   281k  229   92  28% |   4.1   11.4   31    0   200k  179   90  33%    0.0
+lte   49    3   0    0   248k  203  119  36% |   3.6   10.6   31    0   141k  157   90  36%    0.0
+lte   49    2   0    0   235k  192  325  62% |   2.7    9.4   31    0   469k  385  305  44%  3.15k
+lte   49    1   0    0   274k  212  331  60% |   1.6    6.0   31    0   174k  142  266  65%  2.96k
+lte   49    2   0    0   341k  276  215  43% |   3.6   11.3   31    0   503k  402  210  34%    0.0
+lte   49    2   0    0   271k  206  368  64% |   2.4    8.9   31    0   340k  277  318  53%    0.0
+lte   49    2   0    0   311k  227  275  54% |   2.8    5.5   31    0   164k  141  132  48%    0.0
+RACH:  tti=5651, cc=0, preamble=44, offset=1, temp_crnti=0x4a
+RACH:  tti=5671, cc=0, preamble=50, offset=1, temp_crnti=0x4b
+RACH:  tti=5691, cc=0, preamble=12, offset=1, temp_crnti=0x4c
+RACH:  tti=5711, cc=0, preamble=7, offset=1, temp_crnti=0x4d
+Disconnecting rnti=0x4a.
+RACH:  tti=5731, cc=0, preamble=5, offset=1, temp_crnti=0x4e
+Disconnecting rnti=0x4b.
+RACH:  tti=5761, cc=0, preamble=41, offset=1, temp_crnti=0x4f
+Disconnecting rnti=0x4c.
+RACH:  tti=5781, cc=0, preamble=43, offset=1, temp_crnti=0x50
+Disconnecting rnti=0x4d.
+RACH:  tti=5801, cc=0, preamble=19, offset=1, temp_crnti=0x51
+Disconnecting rnti=0x4e.
+RACH:  tti=5821, cc=0, preamble=50, offset=1, temp_crnti=0x52
+Disconnecting rnti=0x4f.
+RACH:  tti=5841, cc=0, preamble=46, offset=1, temp_crnti=0x53
+Disconnecting rnti=0x50.
+RACH:  tti=5861, cc=0, preamble=33, offset=1, temp_crnti=0x54
+Disconnecting rnti=0x51.
+RACH:  tti=5881, cc=0, preamble=7, offset=1, temp_crnti=0x55
+Disconnecting rnti=0x52.
+RACH:  tti=5901, cc=0, preamble=24, offset=1, temp_crnti=0x56
+Disconnecting rnti=0x53.
+RACH:  tti=5921, cc=0, preamble=9, offset=1, temp_crnti=0x57
+Disconnecting rnti=0x54.
+RACH:  tti=5941, cc=0, preamble=26, offset=1, temp_crnti=0x58
+Disconnecting rnti=0x55.
+Disconnecting rnti=0x56.
+Disconnecting rnti=0x57.
+Disconnecting rnti=0x58.
+lte   49    1   0    0   4.2k    3  117  97% |   0.3   -4.9   31    1   6.6k    3  134  97%    0.0
+lte   49  n/a   0    0      0    0    0   0% |   n/a   -7.0    0    0      0    0    0   0%    0.0
+lte   49  n/a   0    0      0    0    0   0% |   n/a   -6.7    0    0      0    0    0   0%    0.0
+lte   49  n/a   0    0      0    0    0   0% |   n/a   -5.6    0    0      0    0    0   0%    0.0
+RACH:  tti=9761, cc=0, preamble=7, offset=1, temp_crnti=0x59
+Disconnecting rnti=0x49.
+User 0x59 connected
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   59    6   0    5    90k   46  252  84% |   2.6   10.6   31    1   524k  268  278  50%    0.0
+lte   59    5   0    2   149k  108  243  69% |   2.8    4.4   31    2   205k  146  333  69%    0.0
+lte   59    3   0    0   183k  154  108  41% |   3.0    9.0   31    1   125k  119  185  60%    0.0
+lte   59    3   0    0    93k   85   50  37% |   3.8   10.4   31    1   179k  164  104  38%    0.0
+lte   59    3   0    1    78k   74  127  63% |   1.8    5.7   31    1   111k  100  196  66%    0.0
+lte   59    2   0    0   104k  101   84  45% |   3.8   10.8   31    1   278k  218  137  38%    0.0
+lte   59    3   0    0    81k   78  132  62% |   2.8    6.6   31    2   103k   87  238  73%    0.0
+lte   59    2   0    0   140k  121  163  57% |   1.8    7.9   31    0   136k  115  181  61%    0.0
+lte   59    3   0    0    92k   92  104  53% |   2.4    8.3   31    1   137k  131  249  65%    0.0
+lte   59    2   0    0   111k  106   43  28% |   4.7   10.9   31    2   130k  126   87  40%    0.0
+lte   59    2   0    0   107k   99   65  39% |   3.3    9.9   31    1   172k  148  190  56%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   59    3   0    0    88k   85  131  60% |   2.1    6.2   31    1   111k   91  312  77%    0.0
+lte   59    2   0    0    85k   90   63  41% |   3.7    9.0   31    1   134k  118  153  56%    0.0
+lte   59    3   0    0    95k  106   41  27% |   3.4    9.7   31    1   134k  137  125  47%    250
+lte   59    3   0    1    79k   83  115  58% |   2.3    7.7   31    0   107k  109  153  58%    0.0
+lte   59    2   0    0    77k   77  147  65% |   1.6    7.8   31    0   118k  102  258  71%    0.0
+lte   59    3   0    1    94k   96  107  52% |   2.9    9.4   31    1   121k  110  189  63%    0.0
+lte   59    3   0    1    90k  103   85  45% |   4.1   10.8   31    2   127k   86  134  60%    0.0
+lte   59    7   0    4    13k   12  177  93% |   0.5   -3.0   31    1    33k   30  434  93%    0.0
+RACH:  tti=8261, cc=0, preamble=22, offset=1, temp_crnti=0x5a
+RACH:  tti=8281, cc=0, preamble=36, offset=1, temp_crnti=0x5b
+Disconnecting rnti=0x5a.
+Disconnecting rnti=0x5b.
+RACH:  tti=8501, cc=0, preamble=40, offset=1, temp_crnti=0x5c
+RACH:  tti=8521, cc=0, preamble=32, offset=1, temp_crnti=0x5d
+RACH:  tti=8541, cc=0, preamble=9, offset=1, temp_crnti=0x5e
+RACH:  tti=8561, cc=0, preamble=33, offset=1, temp_crnti=0x5f
+Disconnecting rnti=0x5c.
+RACH:  tti=8581, cc=0, preamble=44, offset=1, temp_crnti=0x60
+Disconnecting rnti=0x5d.
+RACH:  tti=8601, cc=0, preamble=24, offset=1, temp_crnti=0x61
+Disconnecting rnti=0x5e.
+RACH:  tti=8621, cc=0, preamble=5, offset=1, temp_crnti=0x62
+Disconnecting rnti=0x5f.
+RACH:  tti=8641, cc=0, preamble=29, offset=1, temp_crnti=0x63
+Disconnecting rnti=0x60.
+RACH:  tti=8661, cc=0, preamble=34, offset=1, temp_crnti=0x64
+Disconnecting rnti=0x61.
+RACH:  tti=8681, cc=0, preamble=4, offset=1, temp_crnti=0x65
+Disconnecting rnti=0x62.
+Disconnecting rnti=0x63.
+Disconnecting rnti=0x64.
+Disconnecting rnti=0x65.
+lte   59  n/a   0    0      0    0    0   0% |   n/a   -5.9    0    0      0    0    0   0%    0.0
+lte   59   10   0    0      0    0    0   0% |   n/a   -5.6    0    0      0    0    0   0%    0.0
+lte   59  n/a   0    0      0    0    0   0% |   n/a   -6.6    0    0      0    0    0   0%    0.0
+Disconnecting rnti=0x59.
+RACH:  tti=2081, cc=0, preamble=46, offset=1, temp_crnti=0x66
+RACH:  tti=2101, cc=0, preamble=4, offset=1, temp_crnti=0x67
+Disconnecting rnti=0x66.
+User 0x67 connected
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   67    2   0    2   186k   71   57  44% |   5.2   12.7   31    3   433k  180   74  29%    0.0
+lte   67    3   0    1   114k   99   50  33% |   7.0   12.4   31    5   383k  240   79  24%  2.76k
+lte   67    3   0    1   144k  147   29  16% |   6.0   16.4   31    1   1.4M  790   82   9%  4.59k
+lte   67    3   0    0   144k  148   44  22% |   6.2   14.3   31    1   1.3M  730  108  12%  6.56k
+lte   67    3   0    0   127k  124   32  20% |   6.4   13.9   31    2   846k  476   64  11%    0.0
+lte   67    3   0    0   127k  123   44  26% |   6.2   14.4   31    2   635k  422   91  17%  4.50k
+lte   67    2   0    0   104k  109   76  41% |   4.5   12.6   31    1   507k  379  212  35%  4.70k
+lte   67    3   0    1   103k  116   59  33% |   5.0   14.0   31    0   610k  448  173  27%  2.44k
+lte   67    4   0    1    95k  102   57  35% |   4.6   11.4   31    1   293k  237  118  33%    0.0
+lte   67    2   0    0   107k  113   25  18% |   5.4   11.4   31    3   132k  104   82  44%    0.0
+lte   67    3   0    0    79k   89  180  66% |   2.4   10.5   31    0   445k  381  170  30%  2.52k
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   67    3   0    0    68k   74  149  66% |   2.2    8.3   31    0   358k  302  179  37%  4.44k
+lte   67    3   0    0    47k   49  260  84% |   2.1    9.0   31    0   518k  426  312  42%    0.0
+lte   67    2   0    0    90k   93   72  43% |   2.6   10.2   31    0   245k  211  159  42%    0.0
+lte   67    3   0    0    35k   43  238  84% |   2.4    7.9   31    0   676k  552  213  27%  4.31k
+lte   67    3   0    0    72k   86  216  71% |   2.9   10.6   31    0   783k  639  219  25%  3.96k
+lte   67    3   0    0    77k   92  224  70% |   3.2   11.9   31    0   991k  809  119  12%  5.79k
+lte   67    3   0    0    64k   75  235  75% |   3.1   13.3   31    0   840k  618  201  24%  1.32k
+lte   67    3   0    0    94k  108  117  52% |   3.9   11.3   31    1   708k  481  138  22%    0.0
+lte   67    3   0    0    82k   90  134  59% |   3.1   12.6   31    0   575k  433  179  29%    253
+lte   67    3   0    0    74k   89  215  70% |   2.8   10.6   31    0   806k  603  181  23%  1.78k
+lte   67    2   0    0   105k  123   51  29% |   4.2    8.0   31    1   555k  312  127  28%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   67    2   0    0    93k  107   54  33% |   3.1    9.3   31    1   188k  133  129  49%    0.0
+lte   67    3   0    0    79k   93  139  59% |   2.3    7.4   31    0   333k  261  216  45%  1.10k
+lte   67    3   0    0    79k   87  164  65% |   2.7   10.4   31    0   516k  373  342  47%  2.67k
+lte   67    2   0    0   106k  120  110  47% |   4.2   10.4   31    1   758k  484  223  31%  1.04k
+lte   67    2   0    0   109k  130   97  42% |   3.8   12.0   31    0   808k  658  163  19%  4.51k
+lte   67    2   0    0   113k  132   72  35% |   4.5   12.9   31    1   840k  554  172  23%  1.88k
+lte   67    3   0    0   123k  145   36  19% |   5.7   14.4   31    1   1.2M  715  116  13%  6.30k
+lte   67    3   0    0   125k  149   61  29% |   5.6   14.5   31    1   1.3M  788   87   9%    0.0
+lte   67    3   0    0   114k  126   47  27% |   4.8   12.8   31    1   799k  463  176  27%    0.0
+lte   67    2   0    0   105k  122   74  37% |   4.3   12.6   31    1   471k  344  227  39%    0.0
+lte   67    2   0    0   105k  121   81  40% |   4.4   12.9   31    1   597k  404  264  39%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   67    3   0    0   111k  125   36  22% |   5.8   14.3   31    1   626k  402  132  24%    0.0
+lte   67    3   0    0   104k  123   69  35% |   4.7   13.2   31    1   561k  406  238  36%  1.18k
+lte   67    3   0    0   107k  125   39  23% |   5.3   14.1   31    1   635k  432  139  24%  4.09k
+lte   67    3   0    0   116k  132   33  20% |   5.2   14.3   31    0   725k  591  147  19%  4.54k
+lte   67    3   0    1    93k  105   68  39% |   5.0   11.9   31    2   382k  261  224  46%    0.0
+lte   67    2   0    0   107k  124   56  31% |   4.9   11.4   31    0   641k  484  223  31%  2.89k
+lte   67    2   0    0    94k   95   46  32% |   2.7   10.6   31    0   194k  159  207  56%  3.93k
+lte   67    2   0    0    91k   92  129  58% |   3.0    9.7   31    0   378k  312  402  56%    301
+lte   67    2   0    0    80k   85  122  58% |   2.5    8.4   31    1   217k  166  464  73%    0.0
+lte   67    3   0    2    53k   50  203  80% |   2.0    4.3   31    1    99k   80  575  87%  4.70k
+lte   67    1   0    0    98k   95  106  52% |   3.4    9.1   31    1   133k  109  313  74%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   67    1   0    0    76k   77  158  67% |   2.6    8.6   31    0   113k   85  369  81%  2.74k
+lte   67    1   0    0    76k   78  140  64% |   2.1    9.4   31    0   156k  137  368  72%    0.0
+lte   67    2   0    0    69k   73  180  71% |   1.7    8.2   31    0   231k  202  325  61%    0.0
+lte   67    2   0    0   112k  114  119  51% |   1.8    6.1   31    0   101k   88   67  43%    0.0
+lte   67    2   0    0    76k   76  161  67% |   2.3    8.9   31    0   262k  221  441  66%  1.04k
+lte   67    2   0    0    85k   91  159  63% |   2.4    8.9   31    1   232k  205  349  62%    247
+lte   67    1   0    0    69k   66  208  75% |   2.3    5.1   31    0   219k  170  456  72%  1.13k
+lte   67    2   0    0    68k   75  190  71% |   2.3    7.1   31    1   203k  153  451  74%    0.0
+RACH:  tti=3191, cc=0, preamble=25, offset=1, temp_crnti=0x68
+RACH:  tti=3211, cc=0, preamble=20, offset=1, temp_crnti=0x69
+RACH:  tti=3231, cc=0, preamble=16, offset=1, temp_crnti=0x6a
+RACH:  tti=3251, cc=0, preamble=8, offset=1, temp_crnti=0x6b
+RACH:  tti=3271, cc=0, preamble=2, offset=1, temp_crnti=0x6c
+Disconnecting rnti=0x68.
+Disconnecting rnti=0x69.
+RACH:  tti=3301, cc=0, preamble=33, offset=1, temp_crnti=0x6d
+Disconnecting rnti=0x6a.
+RACH:  tti=3321, cc=0, preamble=51, offset=1, temp_crnti=0x6e
+Disconnecting rnti=0x6b.
+RACH:  tti=3341, cc=0, preamble=21, offset=1, temp_crnti=0x6f
+Disconnecting rnti=0x6c.
+RACH:  tti=3361, cc=0, preamble=32, offset=1, temp_crnti=0x70
+Disconnecting rnti=0x6d.
+RACH:  tti=3381, cc=0, preamble=45, offset=1, temp_crnti=0x71
+RACH:  tti=3401, cc=0, preamble=31, offset=1, temp_crnti=0x72
+Disconnecting rnti=0x6e.
+Disconnecting rnti=0x6f.
+RACH:  tti=3421, cc=0, preamble=39, offset=1, temp_crnti=0x73
+Disconnecting rnti=0x70.
+RACH:  tti=3441, cc=0, preamble=45, offset=1, temp_crnti=0x74
+RACH:  tti=3461, cc=0, preamble=16, offset=1, temp_crnti=0x75
+Disconnecting rnti=0x71.
+Disconnecting rnti=0x72.
+RACH:  tti=3481, cc=0, preamble=13, offset=1, temp_crnti=0x76
+Disconnecting rnti=0x73.
+Disconnecting rnti=0x74.
+Disconnecting rnti=0x75.
+Disconnecting rnti=0x76.
+lte   67    1   0    0    26k   28  132  82% |   1.8    2.1   31    1    51k   44  242  84%    0.0
+lte   67  n/a   0    0      0    0    0   0% |   n/a   -5.5    0    0      0    0    0   0%    0.0
+lte   67  n/a   0    0      0    0    0   0% |   n/a   -5.7    0    0      0    0    0   0%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   67  n/a   0    0      0    0    0   0% |   n/a   -6.8    0    0      0    0    0   0%    0.0
+Disconnecting rnti=0x67.
+RACH:  tti=7301, cc=0, preamble=1, offset=1, temp_crnti=0x77
+RACH:  tti=7321, cc=0, preamble=39, offset=1, temp_crnti=0x78
+RACH:  tti=7341, cc=0, preamble=49, offset=1, temp_crnti=0x79
+RACH:  tti=7361, cc=0, preamble=23, offset=1, temp_crnti=0x7a
+Disconnecting rnti=0x77.
+Disconnecting rnti=0x78.
+Disconnecting rnti=0x79.
+User 0x7a connected
+lte   7a    1   0    0   5.5k   11    7  38% |   2.6   11.2   31    3   121k   13   27  67%  34.2k
+lte   7a    1   0    0   139k  109  148  57% |   2.9   10.8   31    2   435k  227  397  63%    0.0
+lte   7a    2   0    0   106k   96   31  24% |   5.6   12.2   31    1   203k  149   72  32%    0.0
+lte   7a    2   0    1   108k   91   55  37% |   4.9    9.9   31    2   141k  111   88  44%    0.0
+lte   7a    3   0    1   106k   98   36  26% |   7.7   13.4   31    3   157k  121   45  27%    0.0
+lte   7a    2   0    0   120k  113   13  10% |  11.0   14.5   31    6   170k  130   46  26%    0.0
+lte   7a    2   0    1   105k  118   52  30% |   5.5   10.9   31    1   357k  261  139  34%  3.83k
+lte   7a    2   0    0   128k  156   19  10% |   9.0   18.1   31    2   1.4M  692   78  10%  6.98k
+lte   7a    2   0    0   111k  120   36  23% |   6.0   15.0   31    0   928k  648  209  24%  3.06k
+lte   7a    2   0    0    96k  110   52  32% |   4.8   10.7   31    1   315k  222  221  49%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   7a    2   0    1   100k  110   52  32% |   5.0   12.6   31    1   401k  283  225  44%   85.0
+lte   7a    2   0    0   103k  116   56  32% |   5.6   13.7   31    1   506k  302  220  42%    0.0
+lte   7a    2   0    1   107k  123   58  32% |   6.4   13.4   31    1   687k  392  148  27%    920
+lte   7a    2   0    0    92k  109   73  40% |   4.7   14.2   31    1   340k  231  312  57%    0.0
+lte   7a    2   0    0    93k  103   62  37% |   6.6   10.8   31    6   166k   83   77  48%    192
+lte   7a    1   0    0    93k  104   86  45% |   4.0   11.5   31    1   381k  237  325  57%    0.0
+lte   7a    2   0    0   114k  133   41  23% |   5.8   13.8   31    0   699k  551  122  18%  1.19k
+lte   7a    2   0    0    97k  112   71  38% |   5.4   13.5   31    0   501k  366  249  40%    0.0
+lte   7a    2   0    0   114k  128   35  21% |   6.7   13.1   31    0   736k  527  102  16%    0.0
+lte   7a    2   0    0   100k  114   84  42% |   5.4   12.5   31    2   534k  304  241  44%  2.96k
+lte   7a    2   0    0   103k  115   44  27% |   6.6   13.9   31    2   475k  280  163  36%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   7a    1   0    0    88k   99   79  44% |   4.0   10.7   31    2   344k  241  293  54%  3.66k
+lte   7a    2   0    0    98k  114   78  40% |   4.9   13.0   31    1   456k  347  281  44%    0.0
+lte   7a    2   0    0    99k  112   49  30% |   7.0   16.2   31    3   854k  322  225  41%    0.0
+lte   7a    3   0    1   102k  123   56  31% |   7.6   16.3   31    3   749k  360  164  31%    755
+lte   7a    2   0    0    91k  107  102  48% |   5.6   14.7   31    3   707k  289  324  52%    0.0
+lte   7a    2   0    0   119k  132   35  20% |   8.1   15.9   31    2   985k  534  142  21%  6.05k
+lte   7a    3   0    0   110k  117  100  46% |   6.5   16.4   31    1   859k  456  309  40%  3.80k
+lte   7a    3   0    0    98k  111   69  38% |   6.6   15.4   31    2   800k  358  347  49%  2.41k
+lte   7a    3   0    0   111k  127   59  31% |   8.3   12.7   31    2   1.1M  513  188  26%    0.0
+lte   7a    2   0    0   108k  124   56  31% |   9.0   14.4   31    4   946k  361  142  28%  2.93k
+lte   7a    2   0    0    98k  107   18  14% |  12.3   17.0   31    7   356k  184   64  25%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   7a    2   0    0   122k  141   26  15% |  10.8   13.2   31    5   1.1M  311   46  12%  5.91k
+lte   7a    2   0    0   130k  151   74  32% |   8.6   16.7   31    3   1.7M  630  237  27%  7.08k
+lte   7a    3   0    0   119k  134   73  35% |   7.8   16.1   31    2   1.2M  495  222  30%  4.18k
+lte   7a    1   0    0    80k   85  160  65% |   3.9   12.1   31    1   399k  233  552  70%  1.17k
+lte   7a    2   0    0   119k  127   49  27% |   6.3   12.9   31    1   612k  416  209  33%  2.96k
+lte   7a    2   0    0    56k   63  204  76% |   2.1    7.5   31    0   313k  261  432  62%  2.58k
+RACH:  tti=3751, cc=0, preamble=3, offset=1, temp_crnti=0x7b
+Disconnecting rnti=0x7b.
+RACH:  tti=3901, cc=0, preamble=5, offset=1, temp_crnti=0x7c
+RACH:  tti=3921, cc=0, preamble=8, offset=1, temp_crnti=0x7d
+RACH:  tti=3941, cc=0, preamble=37, offset=1, temp_crnti=0x7e
+RACH:  tti=3961, cc=0, preamble=50, offset=1, temp_crnti=0x7f
+RACH:  tti=3981, cc=0, preamble=32, offset=1, temp_crnti=0x80
+Disconnecting rnti=0x7c.
+Disconnecting rnti=0x7d.
+RACH:  tti=4001, cc=0, preamble=18, offset=1, temp_crnti=0x81
+Disconnecting rnti=0x7e.
+RACH:  tti=4021, cc=0, preamble=3, offset=1, temp_crnti=0x82
+Disconnecting rnti=0x7f.
+RACH:  tti=4041, cc=0, preamble=15, offset=1, temp_crnti=0x83
+Disconnecting rnti=0x80.
+RACH:  tti=4061, cc=0, preamble=51, offset=1, temp_crnti=0x84
+Disconnecting rnti=0x81.
+RACH:  tti=4081, cc=0, preamble=25, offset=1, temp_crnti=0x85
+Disconnecting rnti=0x82.
+Disconnecting rnti=0x83.
+Disconnecting rnti=0x84.
+Disconnecting rnti=0x85.
+lte   7a  n/a   0    0      0    0   39 100% |   0.1   -5.8    0    0      0    0  102 100%    0.0
+lte   7a  n/a   0    0      0    0    0   0% |   n/a   -7.6    0    0      0    0    0   0%    0.0
+lte   7a  n/a   0    0      0    0    0   0% |   n/a   -7.4    0    0      0    0    0   0%    0.0
+lte   7a  n/a   0    0      0    0    0   0% |   n/a   -7.8    0    0      0    0    0   0%    0.0
+Disconnecting rnti=0x7a.
+RACH:  tti=8081, cc=0, preamble=47, offset=1, temp_crnti=0x86
+RACH:  tti=8101, cc=0, preamble=24, offset=1, temp_crnti=0x87
+RACH:  tti=8121, cc=0, preamble=45, offset=1, temp_crnti=0x88
+RACH:  tti=8141, cc=0, preamble=11, offset=1, temp_crnti=0x89
+RACH:  tti=8161, cc=0, preamble=8, offset=1, temp_crnti=0x8a
+Disconnecting rnti=0x86.
+Disconnecting rnti=0x87.
+RACH:  tti=8181, cc=0, preamble=23, offset=1, temp_crnti=0x8b
+Disconnecting rnti=0x88.
+RACH:  tti=8201, cc=0, preamble=21, offset=1, temp_crnti=0x8c
+RACH:  tti=8221, cc=0, preamble=7, offset=1, temp_crnti=0x8d
+Disconnecting rnti=0x89.
+Disconnecting rnti=0x8a.
+RACH:  tti=8241, cc=0, preamble=21, offset=1, temp_crnti=0x8e
+Disconnecting rnti=0x8b.
+RACH:  tti=8261, cc=0, preamble=29, offset=1, temp_crnti=0x8f
+Disconnecting rnti=0x8c.
+Disconnecting rnti=0x8d.
+Disconnecting rnti=0x8e.
+Disconnecting rnti=0x8f.
+RACH:  tti=1541, cc=0, preamble=28, offset=1, temp_crnti=0x90
+User 0x90 connected
+lte   90    2   0    2   143k   96   32  25% |   6.4   13.2   31    5   1.0M  306  109  26%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   90    2   0    1   139k  128   60  31% |   5.1   11.2   31    1   863k  504  117  18%    514
+lte   90    3   0    0   145k  145   74  33% |   6.0    8.8   31    1   1.3M  780  136  14%  2.90k
+lte   90    2   0    0    99k   96  105  52% |   4.6   10.9   31    4   473k  170  274  61%    580
+lte   90    3   0    1    94k   95   89  48% |   4.5   10.4   31    1   410k  279  330  54%    0.0
+lte   90    1   0    0    73k   67  176  72% |   2.9    6.7   31    4   104k   61  328  84%    0.0
+lte   90    2   0    0    85k   81  135  62% |   5.5    8.9   31   10   114k   53  177  76%    229
+lte   90    2   0    0   113k  107   23  17% |  14.7   16.3   31    9   173k  113   53  31%    252
+lte   90    2   0    0   105k   99   39  28% |  12.5   12.6   31   11   154k  100   59  37%    0.0
+lte   90    2   0    0   141k  150    7   4% |   9.9   15.0   31    2   1.1M  569   33   5%  9.84k
+lte   90    3   0    0   151k  158   17   9% |   8.5    n/a   31    1   1.6M  911   26   2%  21.4k
+lte   90    3   0    0   160k  172   24  12% |   8.8   17.9   31    2   1.7M  824   97  10%  5.99k
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   90    2   0    0   141k  158   27  14% |   7.9   17.4   31    1   1.2M  707  124  14%  1.20k
+lte   90    2   0    0   126k  139   70  33% |   9.4   13.0   31    5   1.3M  409  114  21%    0.0
+lte   90    2   0    0   130k  158   53  25% |   8.9   17.7   31    2   1.6M  676  158  18%  16.1k
+lte   90    2   0    0   134k  154   57  27% |   8.1   18.6   31    2   1.3M  592  237  28%  5.19k
+lte   90    2   0    0   123k  139   49  26% |   8.0   15.8   31    3   934k  376  178  32%    0.0
+lte   90    2   0    1   113k  129   48  27% |   8.2   17.0   31    2   983k  482  104  17%    0.0
+lte   90    2   0    0   110k  122   41  25% |   7.0   12.4   31    2   448k  261   97  27%  1.52k
+lte   90    2   0    0   120k  137   51  27% |   7.8   16.9   31    2   1.1M  546  196  26%  2.43k
+lte   90    2   0    0   102k  119   43  26% |   8.0   16.2   31    3   764k  357  168  32%    0.0
+lte   90    3   0    1   134k  147   14   8% |  10.0   18.5   31    3   1.6M  572   43   6%  3.25k
+lte   90    2   0    0   109k  122   78  39% |   6.2   12.0   31    0   759k  537  223  29%    663
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   90    3   0    0   120k  141   20  12% |   6.1   13.5   31    0   916k  672   55   7%  6.68k
+lte   90    2   0    0   110k  127   54  29% |   5.2   10.2   31    0   744k  559  132  19%    0.0
+lte   90    3   0    0    96k  111   55  33% |   4.0    9.7   31    0   406k  322  125  27%    0.0
+lte   90    3   0    0   100k  116   46  28% |   4.5    8.4   31    0   548k  446  149  25%  4.09k
+lte   90    2   0    0   100k  115   67  36% |   4.7    8.7   31    0   713k  561  246  30%    0.0
+lte   90    3   0    0   114k  136   71  34% |   4.8   10.4   31    0   976k  776   78   9%  7.07k
+lte   90    2   0    0   111k  131   75  36% |   4.6   11.8   31    0   890k  673  192  22%    0.0
+lte   90    3   0    0    78k   89   79  47% |   2.1    7.6   31    0   115k  119  198  62%    0.0
+lte   90    3   0    1   103k   94   25  21% |   8.6   11.8   31    5   184k  141   40  22%    0.0
+lte   90    2   0    0    71k   84  206  71% |   3.0    9.4   31    0   615k  498  172  25%    0.0
+lte   90    3   0    0    94k   98   87  47% |   4.0    8.3   31    1   400k  293   92  23%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   90    3   0    0    93k  107  118  52% |   3.0   10.4   31    0   513k  404  231  36%  2.73k
+lte   90    2   0    0    44k   49  266  84% |   1.5    4.1   31    0   446k  373  324  46%    0.0
+lte   90    2   0    0    76k   94  179  65% |   2.8    4.1   31    0   533k  437  130  22%  6.23k
+lte   90    2   0    0    52k   64  224  77% |   1.3    0.8   31    0   275k  231  317  57%   92.0
+lte   90    4   0    2    23k   24  292  92% |   0.8    3.6   31    1   112k   93  612  86%   84.0
+lte   90    2   0    0    77k   74  133  64% |   1.2    5.6   31    0    98k   89  284  76%    0.0
+lte   90    2   0    1    72k   72  169  70% |   1.9    5.1   31    2   147k  124  322  72%    0.0
+RACH:  tti=2041, cc=0, preamble=16, offset=1, temp_crnti=0x91
+RACH:  tti=2061, cc=0, preamble=22, offset=1, temp_crnti=0x92
+RACH:  tti=2081, cc=0, preamble=44, offset=1, temp_crnti=0x93
+RACH:  tti=2101, cc=0, preamble=5, offset=1, temp_crnti=0x94
+Disconnecting rnti=0x91.
+RACH:  tti=2121, cc=0, preamble=51, offset=1, temp_crnti=0x95
+Disconnecting rnti=0x92.
+RACH:  tti=2141, cc=0, preamble=7, offset=1, temp_crnti=0x96
+Disconnecting rnti=0x93.
+RACH:  tti=2161, cc=0, preamble=30, offset=1, temp_crnti=0x97
+Disconnecting rnti=0x94.
+RACH:  tti=2181, cc=0, preamble=50, offset=1, temp_crnti=0x98
+Disconnecting rnti=0x95.
+RACH:  tti=2201, cc=0, preamble=11, offset=1, temp_crnti=0x99
+Disconnecting rnti=0x96.
+RACH:  tti=2221, cc=0, preamble=35, offset=1, temp_crnti=0x9a
+Disconnecting rnti=0x97.
+Disconnecting rnti=0x98.
+Disconnecting rnti=0x99.
+Disconnecting rnti=0x9a.
+lte   90    0   0    0    17k   18  245  93% |   1.5   -4.2   31    1    16k   14   67  82%    0.0
+lte   90  n/a   0    0      0    0    0   0% |   n/a   -6.3    0    0      0    0    0   0%    0.0
+lte   90  n/a   0    0      0    0    0   0% |   n/a   -6.6    0    0      0    0    0   0%    0.0
+lte   90  n/a   0    0      0    0    0   0% |   n/a   -5.7    0    0      0    0    0   0%    0.0
+RACH:  tti=5981, cc=0, preamble=34, offset=1, temp_crnti=0x9b
+RACH:  tti=6001, cc=0, preamble=24, offset=1, temp_crnti=0x9c
+RACH:  tti=6021, cc=0, preamble=9, offset=1, temp_crnti=0x9d
+RACH:  tti=6041, cc=0, preamble=43, offset=1, temp_crnti=0x9e
+Disconnecting rnti=0x90.
+Disconnecting rnti=0x9b.
+Disconnecting rnti=0x9c.
+Disconnecting rnti=0x9d.
+RACH:  tti=6121, cc=0, preamble=42, offset=1, temp_crnti=0x9f
+RACH:  tti=6141, cc=0, preamble=12, offset=1, temp_crnti=0xa0
+Disconnecting rnti=0x9e.
+Disconnecting rnti=0x9f.
+RACH:  tti=6221, cc=0, preamble=34, offset=3, temp_crnti=0xa1
+Disconnecting rnti=0xa0.
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a1    2   0    0   5.6k   10   12  54% |   1.2    9.1   31    0    21k    5   23  82%    0.0
+User 0xa1 connected
+RACH:  tti=6711, cc=0, preamble=41, offset=1, temp_crnti=0xa2
+RACH:  tti=6731, cc=0, preamble=37, offset=1, temp_crnti=0xa3
+Disconnecting rnti=0xa2.
+Disconnecting rnti=0xa3.
+RACH:  tti=6821, cc=0, preamble=29, offset=3, temp_crnti=0xa4
+RACH:  tti=6841, cc=0, preamble=41, offset=3, temp_crnti=0xa5
+Disconnecting rnti=0xa1.
+Disconnecting rnti=0xa4.
+User 0xa5 connected
+lte   a5    1   0    0    82k   55   76  58% |   2.1    7.0   31    1   209k   91  183  66%    0.0
+lte   a5    3   0    2   160k  171   24  12% |   8.1   14.9   31    4   2.4M  708   41   5%  16.6k
+lte   a5    3   0    3   191k  191   52  21% |   7.5    n/a   31    4   2.8M  851   83   8%  21.8k
+lte   a5    3   0    1   154k  159   64  28% |   6.0    n/a   31    2   1.7M  824  105  11%  21.2k
+lte   a5    4   0    2   145k  137   51  27% |   5.8    n/a   31    1   1.4M  792  139  14%  17.3k
+lte   a5    3   0    0   135k  134   53  28% |   5.8    n/a   31    0   1.2M  769  153  16%  18.9k
+lte   a5    4   0    1   132k  140   83  37% |   5.4    n/a   31    0   1.3M  889   43   4%  27.7k
+lte   a5    3   0    0    60k   66  281  80% |   3.0    n/a   31    0   953k  744  190  20%  9.84k
+lte   a5    3   0    0    31k   30  363  92% |   2.3    n/a   31    0   756k  576  339  37%  3.83k
+lte   a5    3   0    0    92k   90   88  49% |   3.7   11.0   31    2   191k  156  197  55%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a5    3   0    0   109k  123   40  24% |   7.9   13.8   31    4   676k  332   56  14%  2.19k
+lte   a5    3   0    0   127k  152   49  24% |   6.0   11.0   31    1   1.1M  707  179  20%  7.79k
+lte   a5    3   0    0   106k  126   93  42% |   5.2   11.6   31    0   923k  623  170  21%    0.0
+lte   a5    2   0    0    97k  115   84  42% |   5.2   11.0   31    1   500k  299  217  42%  4.89k
+lte   a5    2   0    1   101k  118  104  46% |   4.7   13.3   31    0   525k  392  313  44%  1.48k
+lte   a5    3   0    0    87k  103  156  60% |   3.9   11.7   31    0   672k  549  258  31%  1.87k
+lte   a5    2   0    0    76k   84  145  63% |   2.8    6.5   31    0   299k  250  291  53%    0.0
+lte   a5    3   0    0    82k   92  109  54% |   1.8    5.0   31    1    94k   84  170  66%    0.0
+lte   a5    4   0    1    94k   90   79  46% |   2.1    4.6   31    0   135k  136  142  51%    0.0
+lte   a5    2   0    0    82k   90  140  60% |   2.6    4.4   31    0   133k  123  138  52%    0.0
+lte   a5    2   0    0   102k  119   62  34% |   5.5   13.8   31    1   462k  361  192  34%  7.79k
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a5    2   0    0   119k  140   51  26% |   6.2   14.3   31    0   819k  642  199  23%  3.89k
+lte   a5    2   0    0    97k  115   91  44% |   4.2   10.6   31    0   650k  506  196  27%    0.0
+lte   a5    2   0    0    82k   90  137  60% |   3.2    8.1   31    0   226k  154  235  60%  1.39k
+lte   a5    2   0    0    90k   91  121  57% |   3.3   10.8   31    1   233k  176  356  66%  2.30k
+lte   a5    2   0    0   103k  112  111  49% |   4.8   11.2   31    0   559k  438  296  40%    0.0
+lte   a5    2   0    0    93k  105   91  46% |   4.5   11.1   31    1   400k  259  258  49%  1.66k
+lte   a5    2   0    0    93k  106  121  53% |   4.8   10.7   31    1   393k  246  300  54%    713
+lte   a5    2   0    0   115k  130   40  23% |   6.3   12.2   31    0   554k  418  133  24%    845
+lte   a5    2   0    0    87k  104  112  51% |   4.1    7.6   31    0   470k  384  278  41%  2.29k
+lte   a5    2   0    0    95k  117  132  53% |   3.9    7.8   31    0   802k  654  239  26%  3.93k
+lte   a5    3   0    0    71k   84  219  72% |   3.4    4.6   31    0   925k  753  152  16%  11.9k
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a5    3   0    0    46k   59  290  83% |   2.5    n/a   31    0   805k  657  274  29%  13.7k
+lte   a5    2   0    0    70k   78  245  75% |   2.5    n/a   31    0   475k  376  527  58%  5.28k
+lte   a5    3   0    0    86k   89   95  51% |   2.8    6.4   31    1   174k  134  197  59%    0.0
+lte   a5    2   0    0    94k  111   72  39% |   5.1    8.4   31    2   332k  279   74  20%  3.03k
+lte   a5    2   0    0   115k  139   44  24% |   5.3   11.0   31    0   1.0M  725   73   9%  9.10k
+lte   a5    2   0    0    87k  101  128  55% |   3.2   10.4   31    1   568k  396  447  53%  5.86k
+lte   a5    1   0    0    87k   92  158  63% |   3.1    7.9   31    2   231k  165  322  66%    0.0
+lte   a5    2   0    0    84k   97  168  63% |   2.8    6.3   31    0   318k  259  467  64%  1.70k
+lte   a5    2   0    0    84k  101  125  55% |   3.7   10.3   31    0   413k  315  378  54%    0.0
+lte   a5    2   0    0    76k   85  173  67% |   2.8    6.8   31    1   187k  146  364  71%    0.0
+lte   a5    2   0    0    84k   95  138  59% |   3.2    8.7   31    0   482k  362  256  41%  6.02k
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a5    3   0    0    45k   51  247  82% |   1.4    5.4   31    0   306k  260  454  63%    0.0
+lte   a5    3   0    1    73k   79  153  65% |   2.2    7.2   31    2   198k  145  284  66%    129
+lte   a5    2   0    0    98k  115   34  22% |   3.9    7.1   31    1   107k  104   57  35%    0.0
+lte   a5    3   0    0    85k   88   72  45% |   2.0    7.9   31    0   161k  161  130  44%    0.0
+lte   a5    2   0    0    73k   84  117  58% |   1.6    4.5   31    0   220k  194  170  46%    0.0
+lte   a5    3   0    0    89k  101   69  40% |   2.5    6.5   31    0   179k  188  152  44%    0.0
+lte   a5    3   0    0    80k   96   86  47% |   1.9    7.2   31    1   146k  122  131  51%  2.77k
+lte   a5    3   0    0    69k   78  118  60% |   1.4    6.1   31    1    95k   99  316  76%    0.0
+lte   a5    3   0    0    73k   82  148  64% |   2.1    8.9   31    0   376k  327  204  38%    0.0
+lte   a5    3   0    0    71k   78  121  60% |   1.1    4.8   31    0    57k   70  350  83%    0.0
+lte   a5    3   0    0    71k   85   97  53% |   1.1    6.1   31    1    91k   80  231  74%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a5    3   0    0    94k  108   53  32% |   2.5    8.2   31    0   138k  157   96  37%    0.0
+lte   a5    3   0    0    95k  107   24  18% |   4.7   10.6   31    0   144k  148   32  17%    0.0
+lte   a5    3   0    0    71k   86  192  69% |   2.9   10.9   31    0   636k  534  160  23%  10.9k
+lte   a5    2   0    0    94k  116  138  54% |   3.6   12.7   31    0   757k  609  241  28%  5.46k
+lte   a5    2   0    0    95k  117   80  40% |   4.8   12.8   31    0   736k  561  218  27%  3.03k
+lte   a5    2   0    0    87k  100  102  50% |   3.3   11.3   31    0   382k  290  218  42%  1.96k
+lte   a5    2   0    0    83k   90  104  53% |   3.1    5.3   31    1   285k  209  221  51%    244
+lte   a5    3   0    2    77k   85  118  58% |   1.8    7.3   31    0   145k  138  173  55%    210
+lte   a5    2   0    0    95k  109   27  19% |   5.5    8.8   31    2   187k  162   55  25%    0.0
+lte   a5    2   0    0    90k  106   43  28% |   5.3    7.5   31    3   158k  140   63  31%    0.0
+lte   a5    3   0    0    57k   69  169  71% |   1.5    5.5   31    0   223k  199  300  60%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a5    3   0    1    60k   62  183  74% |   0.8    2.8   31    1    73k   71  375  84%    0.0
+lte   a5    3   0    0    65k   77  104  57% |   0.8    3.2   31    0    51k   42  185  81%  7.02k
+lte   a5    2   0    0    57k   67  203  75% |   1.2    4.2   31    0    98k   98  375  79%    0.0
+lte   a5    3   0    0    76k   85  118  58% |   2.2    6.8   31    1   111k  118  213  64%    0.0
+lte   a5    2   0    0    56k   64  210  76% |   1.5    8.1   31    0   290k  245  334  57%    0.0
+lte   a5    2   0    0    77k   89  103  53% |   1.2    4.7   31    0    38k   38  147  79%    0.0
+lte   a5    2   0    0    55k   66  203  75% |   1.6    3.9   31    0   323k  276  227  45%    734
+lte   a5    2   0    0    64k   72  125  63% |   1.2    6.5   31    1   127k  117  342  74%    0.0
+lte   a5    2   0    0    74k   86   78  47% |   0.8    3.6   31    0    29k   25  112  81%  8.24k
+lte   a5    3   0    0    55k   62  145  70% |   1.2    4.8   31    1   133k  130  335  72%    0.0
+lte   a5    2   0    0    82k   89   63  41% |   1.3    5.8   31    0    49k   51  156  75%    0.0
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a5    3   0    0    81k   89   71  44% |   1.2    5.0   31    1    59k   50  111  68%  7.31k
+lte   a5    3   0    0    65k   72  154  68% |   1.3    4.1   31    1   128k  126  309  71%    0.0
+lte   a5    2   0    0    79k   84   84  50% |   3.1    6.3   31    1   130k  129  176  57%    0.0
+lte   a5    1   0    0    85k   93   39  29% |   0.8    2.3    0    0    120    1   24  96%    0.0
+lte   a5    3   0    0    47k   54  174  76% |   0.8    3.6   31    0    93k   76  435  85%    107
+lte   a5    3   0    0    65k   77  105  57% |   1.3    5.7   31    0    66k   85  298  77%    0.0
+lte   a5    3   0    1    83k   98   71  42% |   3.1    8.5   31    0   145k  151   91  37%    0.0
+lte   a5    2   0    0    96k  104   40  27% |   3.5    9.4   31    0   138k  149   78  34%    0.0
+lte   a5    3   0    0    92k  107   39  26% |   4.2    9.1   31    1   148k  144   84  36%    0.0
+/home/jalil/oaic/srsRAN-e2/lib/src/phy/rf/rf_uhd_imp.cc:313: UHD unhandled event code 4
+lte   a5    2   0    0    38k   47  120  71% |   3.8   -1.0   31    0    60k   69   27  28%    0.0
+lte   a5  n/a   0    0      0    0    0   0% |   n/a   -1.9    0    0      0    0    0   0%    0.0
+RACH:  tti=1341, cc=0, preamble=14, offset=1, temp_crnti=0xa6
+RACH:  tti=1361, cc=0, preamble=47, offset=1, temp_crnti=0xa7
+RACH:  tti=1381, cc=0, preamble=56, offset=1, temp_crnti=0xa8
+RACH:  tti=1401, cc=0, preamble=5, offset=14, temp_crnti=0xa9
+Disconnecting rnti=0xa6.
+RACH:  tti=1421, cc=0, preamble=44, offset=1, temp_crnti=0xaa
+Disconnecting rnti=0xa7.
+RACH:  tti=1441, cc=0, preamble=39, offset=1, temp_crnti=0xab
+Disconnecting rnti=0xa8.
+RACH:  tti=1461, cc=0, preamble=58, offset=1, temp_crnti=0xac
+Disconnecting rnti=0xa9.
+RACH:  tti=1481, cc=0, preamble=21, offset=1, temp_crnti=0xad
+RACH:  tti=1501, cc=0, preamble=44, offset=1, temp_crnti=0xae
+Disconnecting rnti=0xaa.
+Disconnecting rnti=0xab.
+RACH:  tti=1521, cc=0, preamble=2, offset=14, temp_crnti=0xaf
+Disconnecting rnti=0xac.
+RACH:  tti=1541, cc=0, preamble=13, offset=1, temp_crnti=0xb0
+Disconnecting rnti=0xad.
+RACH:  tti=1561, cc=0, preamble=42, offset=1, temp_crnti=0xb1
+Disconnecting rnti=0xae.
+RACH:  tti=1581, cc=0, preamble=27, offset=1, temp_crnti=0xb2
+Disconnecting rnti=0xaf.
+RACH:  tti=1601, cc=0, preamble=18, offset=3, temp_crnti=0xb3
+Disconnecting rnti=0xb0.
+RACH:  tti=1621, cc=0, preamble=41, offset=3, temp_crnti=0xb4
+Disconnecting rnti=0xb1.
+RACH:  tti=1651, cc=0, preamble=2, offset=16, temp_crnti=0xb5
+Disconnecting rnti=0xb2.
+RACH:  tti=1671, cc=0, preamble=24, offset=3, temp_crnti=0xb6
+Disconnecting rnti=0xb3.
+RACH:  tti=1691, cc=0, preamble=15, offset=3, temp_crnti=0xb7
+Disconnecting rnti=0xb4.
+RACH:  tti=1711, cc=0, preamble=21, offset=3, temp_crnti=0xb8
+Disconnecting rnti=0xb5.
+RACH:  tti=1731, cc=0, preamble=4, offset=16, temp_crnti=0xb9
+Disconnecting rnti=0xb6.
+RACH:  tti=1751, cc=0, preamble=49, offset=3, temp_crnti=0xba
+Disconnecting rnti=0xb7.
+RACH:  tti=1771, cc=0, preamble=45, offset=3, temp_crnti=0xbb
+Disconnecting rnti=0xb8.
+RACH:  tti=1791, cc=0, preamble=45, offset=1, temp_crnti=0xbc
+Disconnecting rnti=0xb9.
+RACH:  tti=1811, cc=0, preamble=40, offset=1, temp_crnti=0xbd
+Disconnecting rnti=0xba.
+RACH:  tti=1831, cc=0, preamble=12, offset=3, temp_crnti=0xbe
+Disconnecting rnti=0xbb.
+Disconnecting rnti=0xbc.
+Disconnecting rnti=0xbd.
+Disconnecting rnti=0xbe.
+
+          -----------------DL----------------|-------------------------UL-------------------------
+rat rnti  cqi  ri  mcs  brate   ok  nok  (%) | pusch  pucch  phr  mcs  brate   ok  nok  (%)    bsr
+lte   a5    6   0    0      0    0    3 100% |   n/a   -6.6    0    0      0    0    0   0%    0.0
+lte   a5  n/a   0    0      0    0    0   0% |   n/a   -6.4    0    0      0    0    0   0%    0.0
+Disconnecting rnti=0xa5.
+RACH:  tti=5651, cc=0, preamble=2, offset=16, temp_crnti=0xbf
+RACH:  tti=5671, cc=0, preamble=22, offset=3, temp_crnti=0xc0
+RACH:  tti=5691, cc=0, preamble=53, offset=3, temp_crnti=0xc1
+RACH:  tti=5711, cc=0, preamble=19, offset=3, temp_crnti=0xc2
+Disconnecting rnti=0xbf.
+RACH:  tti=5731, cc=0, preamble=51, offset=3, temp_crnti=0xc3
+Disconnecting rnti=0xc0.
+RACH:  tti=5751, cc=0, preamble=19, offset=3, temp_crnti=0xc4
+Disconnecting rnti=0xc1.
+RACH:  tti=5771, cc=0, preamble=54, offset=1, temp_crnti=0xc5
+RACH:  tti=5791, cc=0, preamble=16, offset=1, temp_crnti=0xc6
+Disconnecting rnti=0xc2.
+RACH:  tti=5811, cc=0, preamble=44, offset=1, temp_crnti=0xc7
+Disconnecting rnti=0xc3.
+RACH:  tti=5831, cc=0, preamble=1, offset=14, temp_crnti=0xc8
+Disconnecting rnti=0xc4.
+Disconnecting rnti=0xc5.
+Disconnecting rnti=0xc6.
+Disconnecting rnti=0xc7.
+Disconnecting rnti=0xc8.
+RACH:  tti=9651, cc=0, preamble=29, offset=1, temp_crnti=0xc9
+RACH:  tti=9671, cc=0, preamble=25, offset=1, temp_crnti=0xca
+RACH:  tti=9691, cc=0, preamble=8, offset=1, temp_crnti=0xcb
+RACH:  tti=9711, cc=0, preamble=44, offset=1, temp_crnti=0xcc
+Disconnecting rnti=0xc9.
+RACH:  tti=9731, cc=0, preamble=10, offset=1, temp_crnti=0xcd
+RACH:  tti=9751, cc=0, preamble=4, offset=16, temp_crnti=0xce
+Disconnecting rnti=0xca.
+Disconnecting rnti=0xcb.
+RACH:  tti=9771, cc=0, preamble=50, offset=3, temp_crnti=0xcf
+Disconnecting rnti=0xcc.
+RACH:  tti=9791, cc=0, preamble=45, offset=3, temp_crnti=0xd0
+RACH:  tti=9811, cc=0, preamble=0, offset=16, temp_crnti=0xd1
+Disconnecting rnti=0xcd.
+Disconnecting rnti=0xce.
+RACH:  tti=9831, cc=0, preamble=6, offset=16, temp_crnti=0xd2
+Disconnecting rnti=0xcf.
+Disconnecting rnti=0xd0.
+Disconnecting rnti=0xd1.
+Disconnecting rnti=0xd2.
+RACH:  tti=3411, cc=0, preamble=55, offset=1, temp_crnti=0xd3
+RACH:  tti=3431, cc=0, preamble=3, offset=14, temp_crnti=0xd4
+RACH:  tti=3451, cc=0, preamble=31, offset=1, temp_crnti=0xd5
+RACH:  tti=3471, cc=0, preamble=39, offset=1, temp_crnti=0xd6
+Disconnecting rnti=0xd3.
+RACH:  tti=3491, cc=0, preamble=50, offset=1, temp_crnti=0xd7
+Disconnecting rnti=0xd4.
+RACH:  tti=3511, cc=0, preamble=8, offset=1, temp_crnti=0xd8
+RACH:  tti=3531, cc=0, preamble=29, offset=1, temp_crnti=0xd9
+Disconnecting rnti=0xd5.
+RACH:  tti=3551, cc=0, preamble=4, offset=14, temp_crnti=0xda
+Disconnecting rnti=0xd6.
+Disconnecting rnti=0xd7.
+RACH:  tti=3571, cc=0, preamble=23, offset=1, temp_crnti=0xdb
+Disconnecting rnti=0xd8.
+RACH:  tti=3591, cc=0, preamble=39, offset=1, temp_crnti=0xdc
+Disconnecting rnti=0xd9.
+Disconnecting rnti=0xda.
+Disconnecting rnti=0xdb.
+Disconnecting rnti=0xdc.
+RACH:  tti=7421, cc=0, preamble=41, offset=1, temp_crnti=0xdd
+RACH:  tti=7441, cc=0, preamble=50, offset=1, temp_crnti=0xde
+RACH:  tti=7461, cc=0, preamble=30, offset=1, temp_crnti=0xdf
+RACH:  tti=7481, cc=0, preamble=12, offset=1, temp_crnti=0xe0
+RACH:  tti=7501, cc=0, preamble=6, offset=14, temp_crnti=0xe1
+Disconnecting rnti=0xdd.
+Disconnecting rnti=0xde.
+RACH:  tti=7521, cc=0, preamble=51, offset=1, temp_crnti=0xe2
+Disconnecting rnti=0xdf.
+RACH:  tti=7541, cc=0, preamble=24, offset=1, temp_crnti=0xe3
+Disconnecting rnti=0xe0.
+RACH:  tti=7561, cc=0, preamble=2, offset=14, temp_crnti=0xe4
+Disconnecting rnti=0xe1.
+RACH:  tti=7581, cc=0, preamble=8, offset=1, temp_crnti=0xe5
+Disconnecting rnti=0xe2.
+RACH:  tti=7601, cc=0, preamble=5, offset=14, temp_crnti=0xe6
+Disconnecting rnti=0xe3.
+Disconnecting rnti=0xe4.
+Disconnecting rnti=0xe5.
+Disconnecting rnti=0xe6.
+[ERROR] [X300] 192.168.40.2: x300 fw communication failure #1
+EnvironmentError: IOError: x300 fw poke32 - reply timed out
+/home/jalil/oaic/srsRAN-e2/lib/src/phy/rf/rf_uhd_imp.cc:1340: Error timed out while receiving samples from UHD.
+[ERROR] [X300] 192.168.40.2: x300 fw communication failure #2
+EnvironmentError: IOError: x300 fw poke32 - reply timed out
+[ERROR] [UHD RF] RfnocError: OpTimeout: Control operation timed out waiting for ACK
+[ERROR] [X300] 192.168.40.2: x300 fw communication failure #3
+EnvironmentError: IOError: x300 fw poke32 - reply timed out
+[ERROR] [UHD] An unexpected exception was caught in a task loop.The task loop will now exit, things may not work.EnvironmentError: IOError: 192.168.40.2: x300 fw communication failure #3
+EnvironmentError: IOError: x300 fw poke32 - reply timed out
+[ERROR] [UHD RF] RfnocError: OpTimeout: Control operation timed out waiting for ACK
+^Z
+[6]+  Stopped                 sudo srsenb --enb.name=enb1 --enb.enb_id=0x19B --rf.device_name=uhd --rf.device_args="type=x300,clock=external,sampling_rate=11.52e6,send_frame_size=8000,recv_frame_size=8000,num_send_frames=64,num_recv_frames=64,None" --ric.agent.remote_ipv4_addr=${E2TERM_IP} --log.all_level=warn --ric.agent.log_level=debug --log.filename=stdout --ric.agent.local_ipv4_addr=${E2NODE_IP} --ric.agent.local_port=${E2NODE_PORT}
+jalil@Avante-391635:~$ 
+
+

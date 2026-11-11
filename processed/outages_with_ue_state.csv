@@ -1,0 +1,54 @@
+scenario,start,dur,rlf_in_or_near,ue_disconnected_any,ue_mac_active_all
+Location 2,552,4,True,False,True
+Location 2,2152,11,True,False,False
+Location 2,2284,4,True,False,True
+Location 2,2376,9,True,True,False
+Location 3,29,1,False,False,True
+Location 3,78,3,True,False,True
+Location 3,82,6,True,False,True
+Location 3,106,3,True,False,True
+Location 3,111,18,True,False,True
+Location 3,131,11,True,False,False
+Location 3,162,2,False,False,True
+Location 3,174,1,False,False,True
+Location 3,182,10,True,True,False
+Location 3,194,1,False,False,True
+Location 3,214,1,False,False,True
+Location 3,257,1,False,False,True
+Location 3,271,1,False,False,True
+Location 3,273,1,False,False,True
+Location 3,288,4,True,True,False
+Location 3,341,1,True,False,True
+Location 3,343,6,True,True,False
+Location 3,350,5,False,False,True
+Location 3,364,3,True,False,True
+Location 3,368,2,True,False,True
+Location 3,512,8,True,False,True
+Location 3,547,2,False,False,True
+Location 3,550,36,True,True,False
+Location 3,623,4,True,False,True
+Location 3,628,18,True,True,False
+Location 3,809,3,False,False,True
+"Location 3, door closed",38,2,False,False,True
+"Location 3, door closed",46,4,True,True,False
+"Location 3, door closed",51,3,False,False,True
+"Location 3, door closed",55,5,False,False,True
+"Location 3, door closed",61,13,True,True,False
+"Location 3, door closed",81,2,False,False,True
+"Location 3, door closed",114,5,False,False,True
+"Location 3, door closed",122,1,True,False,True
+"Location 3, door closed",125,4,True,True,False
+"Location 3, door closed",131,4,False,False,True
+"Location 3, door closed",167,7,True,True,False
+"Location 3, door closed",180,4,False,False,True
+"Location 3, door closed",205,1,False,False,True
+"Location 3, door closed",213,2,True,False,True
+"Location 3, door closed",216,5,True,True,False
+"Location 3, door closed",230,1,False,False,True
+"Location 3, door closed",237,4,False,False,True
+"Location 3, door closed",255,1,False,False,True
+"Location 3, door closed",266,2,False,False,True
+"Location 3, door closed",269,1,False,False,True
+"Location 3, door closed",273,3,False,False,True
+"Location 3, door closed",281,4,False,False,True
+"Location 3, door closed",286,3,False,False,True

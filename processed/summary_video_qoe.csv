@@ -1,0 +1,6 @@
+session,rows,duration_min,latency_ms_median,latency_missing_pct,final_packet_loss_pct,jitter_ms_median,pli_total,pauses_total
+13:36 (location not recorded),23513,19.593,96.000,1.761,0.620,5.000,1,0
+14:22 t=1 (location not recorded),5841,4.867,122.000,17.326,0.594,7.000,1,0
+14:28 t=2,40734,33.944,118.000,0.015,0.673,7.000,6,2
+15:22 Location 3,25119,20.932,43.000,30.519,15.341,11.000,23,8
+15:57 door closed,9863,8.218,68.000,40.637,13.165,9.000,10,1

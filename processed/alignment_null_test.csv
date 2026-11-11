@@ -1,0 +1,4 @@
+scenario,r_aligned,r_null_median,r_null_max
+Location 2,0.989,-0.065,0.473
+Location 3,0.977,0.096,0.420
+"Location 3, door closed",0.886,0.116,0.465

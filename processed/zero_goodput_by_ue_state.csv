@@ -1,0 +1,4 @@
+scenario,UE not RRC-connected (no metrics line),"connected, UL MAC < 0.1 Mbit/s","connected, UL MAC >= 0.1 Mbit/s"
+Location 2,4,13,11
+Location 3,32,57,63
+"Location 3, door closed",21,6,54
